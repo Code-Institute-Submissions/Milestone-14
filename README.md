@@ -86,8 +86,12 @@ https://vignette.wikia.nocookie.net/criticalrole/images/c/ce/Mollymauk.jpg/revis
 Beauregard image:
 https://vignette.wikia.nocookie.net/criticalrole/images/3/3e/Beauregard.jpg/revision/latest/scale-to-width-down/310?cb=20180116194433
 Nott image:
-https://i.pinimg.com/736x/20/76/32/20763252c68262719e055e826733513f.jpg
+https://vignette.wikia.nocookie.net/criticalrole/images/d/dc/Nott.jpg/revision/latest?cb=20180116194408
 Mighty_Nein image:
 https://cdn.shopify.com/s/files/1/0052/4809/0172/products/Mighty_Nein_CU_grande.jpg?v=1527194361
 Mighty-nein-wall image:
 http://hdqwalls.com/wallpapers/warriors-mighty-nein-minimalist-art-85.jpg
+M93 image:
+https://i0.wp.com/www.nerdsandbeyond.com/wp-content/uploads/2019/06/Critical-Role-Pride-Article-4.jpg
+M94 image:
+https://vignette.wikia.nocookie.net/criticalrole/images/3/33/Campaign_2_official_art.png/revision/latest?cb=20180308124300

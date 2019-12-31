@@ -29,3 +29,13 @@ xl devices (>1200px) = @media min-width: 1200px
 
 
 
+
+iframe:focus {
+  outline: none;
+}
+
+iframe[seamless] {
+  display: block;
+}
+
+
