@@ -63,3 +63,31 @@ Media
 The photos used in this site were obtained from ...
 Acknowledgements
 I received inspiration for this project from X
+
+
+Inspiration from Drew Ryan:
+https://www.youtube.com/channel/UCtXGz0MBuqZUC8rmGddc07Q
+
+Parallax code tutorial --> https://codepen.io/samdbeckham/pen/OPXPNp
+
+
+Jester image:
+https://pbs.twimg.com/profile_images/954040496544010241/bBcHcX7a.jpg
+Yasha image:
+https://vignette.wikia.nocookie.net/criticalrole/images/9/92/Yasha.jpg/revision/latest/scale-to-width-down/310?cb=20180116194508
+Fjord image:
+https://vignette.wikia.nocookie.net/criticalrole/images/2/24/Fjord.jpg/revision/latest?cb=20180116194444
+Caleb image:
+https://vignette.wikia.nocookie.net/criticalrole/images/9/92/Caleb_Widogast.jpg/revision/latest?cb=20180116194349
+Caduceus image:
+https://vignette.wikia.nocookie.net/criticalrole/images/7/78/Caduceus_portrait.jpg/revision/latest?cb=20180727064924&format=original
+Mollymauk image:
+https://vignette.wikia.nocookie.net/criticalrole/images/c/ce/Mollymauk.jpg/revision/latest/scale-to-width-down/310?cb=20180116194455
+Beauregard image:
+https://vignette.wikia.nocookie.net/criticalrole/images/3/3e/Beauregard.jpg/revision/latest/scale-to-width-down/310?cb=20180116194433
+Nott image:
+https://i.pinimg.com/736x/20/76/32/20763252c68262719e055e826733513f.jpg
+Mighty_Nein image:
+https://cdn.shopify.com/s/files/1/0052/4809/0172/products/Mighty_Nein_CU_grande.jpg?v=1527194361
+Mighty-nein-wall image:
+http://hdqwalls.com/wallpapers/warriors-mighty-nein-minimalist-art-85.jpg

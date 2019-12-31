@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700&display=swap');
+/* font-family: 'Noto Sans JP', sans-serif; */
+
+
+/*--------Bootstrap Breakpoints---------*/
+/* xs devices (<576px) = default in Bootstrap (hence no media query)
+No media query since this is the default in Bootstrap
+
+sm devices (>576px) = @media min-width: 576px
+
+md devices (>768px) = @media min-width: 768px
+
+lg devices (>992px) = @media min-width: 992px
+
+xl devices (>1200px) = @media min-width: 1200px
+*/
+
+/*--------Media Queries--------*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+
+
+
+
