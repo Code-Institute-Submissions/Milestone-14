@@ -16,19 +16,152 @@ xl devices (>1200px) = @media min-width: 1200px
 */
 
 /*--------Media Queries--------*/
-@media (max-width: 992px) {
+/* max-width, not min-width, for mobile-first styling */
 
+@media (max-width: 992px) {
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
   }
 @media (max-width: 768px) {
-  
+  .carousel-caption {
+  top: 45%;
 }
+
+.carousel-caption h1 {
+  font-size: 350%;
+}
+
+.carousel-caption h3 {
+  font-size: 140%;
+  font-weight: 400;
+  padding-bottom: .2rem;
+}
+
+.dsiplay-4 {
+  font-size: 200%;
+}
+
+.social a {
+  font-size: 2.5rem;
+  padding: 1.2rem;
+}
+}
+
 @media (max-width: 576px) {
+   .carousel-caption {
+  top: 40%;
+}
+
+.carousel-caption h1 {
+  font-size: 250%;
+}
+
+.carousel-caption h3 {
+  font-size: 110%;
+  font-weight: 400;
+}
+.carousel-indicators {
+  display: none;
+}
+
+.dsiplay-4 {
+  font-size: 160%;
+}
+
+
+.social a {
+  font-size: 2rem;
+  padding: .7rem;
+} 
   
+  
+}
+
+/*--------HTML, BODY Styling-----*/
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #222;
 }
 
 
 
 
+/*-------Nav Styling------*/
+
+.navbar {
+/*1 rem = 16px?*/
+  padding: .8rem;
+}
+
+.navbar-nav li {
+  padding-right: 1.4rem;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+
+/*-------Carousel Styling------*/
+
+.carousel-inner img {
+  width:100%;
+  height: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-caption h1 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  text-shadow: 1px 1px 5px #222;
+}
+
+.carousel-caption h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 5px #222;
+  padding-bottom: 1rem;
+}
+
+
+
+/*------About Styling-----*/
+
+.about-item {
+  padding: 3rem;
+  background-color: #151f3a;
+  color: #d5d5d5;
+}
+
+
+/*--------Character Section Styling--------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------Latest Episode Styling---------*/
 
 iframe:focus {
   outline: none;
@@ -37,5 +170,134 @@ iframe:focus {
 iframe[seamless] {
   display: block;
 }
+
+
+
+
+
+/*--------Prizedraw Styling--------*/
+
+.prize-item {
+  padding: 3rem;
+  background-color: #151f3a;
+  color: #d5d5d5;
+}
+
+
+
+
+
+
+
+/*--------Social Media Styling--------*/
+
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-youtube:hover,
+.fa-twitch:hover,
+.fa-instagram:hover {
+  color: #909090;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-twitter {
+  color: #00aced;
+}
+
+.fa-youtube {
+  color: #bb0000;
+}
+
+.fa-twitch {
+  color: #643fa7;
+}
+
+.fa-instagram {
+  color: #517fa4;
+}
+
+
+
+/*--------Footer Styling--------*/
+
+footer {
+  padding-top: 1rem;
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+}
+
+hr.light { 
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #d5d5d5;
+}
+
+
+
+
+
+
+
+
+
+
+/* ==============FIXES==============*/
+
+/*--------Fixed crousel for Firefox--------*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--------M9 Bg Image fix--------*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--------Padding Fix for Bootstrap--------*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
 
 
