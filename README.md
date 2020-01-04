@@ -68,7 +68,9 @@ I received inspiration for this project from X
 Inspiration from Drew Ryan:
 https://www.youtube.com/channel/UCtXGz0MBuqZUC8rmGddc07Q
 
-Parallax code tutorial --> https://codepen.io/samdbeckham/pen/OPXPNp
+Library for basicscroll parallax --> https://basicscroll.electerious.com/
+
+Parallax code tutorial --> https://codepen.io/samdbeckham/pen/OPXPNp; https://medium.com/@electerious/parallax-scrolling-with-js-controlled-css-variables-63cfe96820c7#.o1kkd4cte
 
 
 Jester image:
