@@ -1,6 +1,7 @@
 @import "compass/css3";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700&display=swap');
-/* font-family: 'Noto Sans JP', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Syncopate:400,700&display=swap');
+/* font-family: 'Noto Sans JP', 'Syncopate', sans-serif; */
 
 /*--------Bootstrap Breakpoints---------*/
 
@@ -90,7 +91,33 @@ body {
   width: 100%;
   font-family: 'Noto Sans JP', sans-serif;
   color: #222;
-  background-color: #8d9098;
+  background-color: #0e1a35;
+}
+
+#maincontain {
+    background-color: #151f3a;
+    position: relative;
+    z-index: 98;
+}
+
+/*#main {
+    max-width: 900px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 99;
+    position: relative;
+    background-color: #210002;
+}
+*/
+
+.bands {
+  padding-top: 20px;
+}
+
+.titletext {
+  color:#fff;
 }
 
 /*-------Nav Styling------*/
@@ -109,27 +136,77 @@ body {
 }
 
 
-/*-------Fixed Image styling ------*/
+/*-------Parallax Styling------*/
 
-
-#bg {
-  position: fixed; 
-  top: -50%; 
-  left: -50%; 
-  width: 200%; 
-  height: 200%;
-}
-#bg img {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
-  min-width: 50%;
-  min-height: 50%;
+* {
+  box-sizing: border-box;
 }
 
+.parallax {
+    perspective: 100px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    left: -5px;
+    right: 0;
+    bottom: 0;
+    margin-left: 0;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+.parallax__cover {
+  background: #0e1a35;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 2000px;
+  z-index: 2;
+}
+
+.parallax__layer__0 {
+  transform: translateZ(-27rem) scale(4);
+}
+
+.parallax__layer__1 {
+  transform: translateZ(-17rem) scale(3.5);
+}
+
+.parallax__layer__2 {
+  transform: translateZ(-200px) scale(3);
+}
+
+.parallax__layer__3 {
+  transform: translateZ(-150px) scale(2.5);
+}
+
+.parallax__layer__4 {
+  transform: translateZ(-100px) scale(2);
+}
+
+.parallax__layer__5 {
+  transform: translateZ(-50px) scale(1.5);
+}
+
+.parallax__layer__6 {
+  transform: translateZ(0px) scale(1);
+}
 
 /*-------Carousel Styling------*/
 
@@ -157,20 +234,36 @@ body {
   padding-bottom: 1rem;
 }
 
-
-
 /*------About Styling-----*/
 
+.titles {
+  font-family: 'Syncopate', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.texts {
+  font-size: large;
+  line-height: 2.5;
+  color: #f1f1f1;
+}
+
 .about-item {
-  padding: 3rem;
-  background-color: #151f3a;
+  padding: 2rem;
+  background: url(../images/blue.jpeg) #151f3a;
   color: #d5d5d5;
 }
 
-
-/*--------Character Section Styling--------*/
+#about-image {
+  padding-left: 5rem;
+}
 
 /*-------Latest Episode Styling---------*/
+
+.episode {
+  background: #151f3a;
+  padding-bottom: 3rem;
+}
 
 iframe:focus {
   outline: none;
@@ -180,23 +273,14 @@ iframe[seamless] {
   display: block;
 }
 
-
-
-
-
 /*--------Prizedraw Styling--------*/
 
 .prize-item {
   padding: 3rem;
-  background-color: #151f3a;
+  
+  background-color: #4b5969;
   color: #d5d5d5;
 }
-
-
-
-
-
-
 
 /*--------Social Media Styling--------*/
 
@@ -234,7 +318,6 @@ iframe[seamless] {
 }
 
 
-
 /*--------Footer Styling--------*/
 
 footer {
@@ -246,21 +329,13 @@ footer {
 hr.light {
   border-top: 1px solid #d5d5d5;
   width: 75%;
-  margin-top: .8rem;
+  margin-top: 1.8rem;
   margin-bottom: 1rem;
 }
 
 footer a {
   color: #d5d5d5;
 }
-
-
-
-
-
-
-
-
 
 
 /* ==============FIXES==============*/
@@ -273,42 +348,22 @@ footer a {
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
+  background: #4b5969;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-/*--------M9 Bg Image fix--------*/
-
-figure {
-  position: relative;
-  width: 100%;
-  height: 60%;
-  margin: 0!important;
-}
-
-.fixed-wrap {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#fixed {
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  will-change: transform;
-}
 
 /*--------Padding Fix for Bootstrap--------*/
 
 [class*="col-"] {
   padding: 1rem;
 }
+
+.form-row, 
+.form-group {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+
