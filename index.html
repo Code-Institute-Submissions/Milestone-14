@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="./flickity.pkgd.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js"></script>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css" media="screen">
   <title>The Mighty Nein</title>
 </head>
 
@@ -25,7 +26,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">Page Top</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">About</a>
@@ -34,7 +35,7 @@
             <a class="nav-link" href="#">Characters</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Prizes</a>
+            <a class="nav-link" href="#">Contact</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Latest Episode</a>
@@ -49,7 +50,7 @@
       <img src="./assets/images/layer_0.png" alt="background image layer 1" />
     </div>
     <div class="parallax__layer parallax__layer__1">
-      <img src="./assets/images/layer_1.png" alt="background image layer 2"/>
+      <img src="./assets/images/layer_1.png" alt="background image layer 2" />
     </div>
     <div class="parallax__layer parallax__layer__2">
       <img src="./assets/images/layer_2.png" alt="background image layer 3" />
@@ -64,7 +65,7 @@
       <img src="./assets/images/layer_5.png" alt="background image layer 6" />
     </div>
     <div class="parallax__layer parallax__layer__6">
-      <img src="./assets/images/m-n.png" alt="background image layer 7"/>
+      <img src="./assets/images/m-nwip.png" alt="background image layer 7" />
     </div>
 
     <div class="parallax__cover">
@@ -74,152 +75,95 @@
           <!--About-->
           <div class="container-fluid padding about-item">
             <div class="row padding">
-              <div class="col-lg-6">
+              <div class="col-md">
                 <h1 class="titles">What is this? Who Are You?</h1>
                 <p class="texts">Welcome, friends and wannabe-adventureres, to the resting place of the (in)famous Might Nein. Known throughout (some) of Exandria for our daring and spectacular and totally, definitely well-thought-out exploits, we are the best mercenary
                   group for higher this side of the Shearing Channel. We boast a wide range of skillsets, including two clerics (capable of healing wonders), a warlock and a wizard for all your magicking needs, rogues for every occasion, a cobalt monk,
-                  and (sometimes) even a barbarian. So go on, have a browse - and if you have any questions, you'll find us in the nearest tavern...</p>
-                  <!--<br><br> Our legendary s range from dragon-slaying, to demon-raising, to a memorable occasion collectiong buttons. All for a very reasonable (open-to-negotiation) price!-->
-                  <!--<br><br> So go on, have a browse - and if you have any questions, you'll find us in the nearest tavern.</p>-->
+                  and (sometimes) even a barbarian. So go on, have a browse - and if you have any questions, you'll find us in the nearest tavern...
+                <br><br> Our legendary s range from dragon-slaying, to demon-raising, to a memorable occasion collectiong buttons. All for a very reasonable (open-to-negotiation) price!
+                <br><br> So go on, have a browse - and if you have any questions, you'll find us in the nearest tavern.</p>
               </div>
-              <div class="col-lg-6">
-                <img src="./assets/images/m93.jpg" alt="image of the Mighty Nein team" class="img-fluid" id="about-image">
+              <div class="col-lg-6 responsive">
+                <img src="./assets/images/m99.jpg" alt="image of the Mighty Nein team" class="img-fluid" id="about-image">
               </div>
             </div>
           </div>
 
 
           <!--Character carousel-->
-          <div id="carouselslides" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselslides" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselslides" data-slide-to="1"></li>
-              <li data-target="#carouselslides" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="container-fluid padding">
-                  <div class="row padding">
-                    <div class="col-md-4">
-                      <div class="card text-center">
-                        <img class="card-img-top" src="./assets/images/Caduceus.jpg" alt="image of Caduceus Clay">
-                        <div class="card-body">
-                          <h4 class="card-title">Caduceus Clay</h4>
-                          <p>Cleric (Grave Domain)</p>
-                          <a href="#" target="_blank" class="btn btn-outline-secondary">Character Sheet</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="card text-center">
-                        <img class="card-img-top" src="./assets/images/Jester.jpg" alt="image of Jester Lavorre">
-                        <div class="card-body">
-                          <h4 class="card-title">Jester Lavorre</h4>
-                          <p>Cleric (Trickery Domain)</p>
-                          <a href="#" target="_blank" class="btn btn-outline-secondary">Character Sheet</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="card text-center">
-                        <img class="card-img-top" src="./assets/images/Nott.jpg" alt="image of Nott the Brave">
-                        <div class="card-body">
-                          <h4 class="card-title">Nott</h4>
-                          <p>Rogue (Arcane Trickster)</p>
-                          <a href="#" target="_blank" class="btn btn-outline-secondary">Character Sheet</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-caption">
-                  <h1 class="display-4">The Mighty Nein</h1>
-                  <h3>Greatest Adventurers in Exandria!</h3>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="container-fluid padding">
-                  <div class="row padding">
-                    <div class="col-md-4">
-                      <div class="card text-center">
-                        <img class="card-img-top" src="./assets/images/Caleb.jpg" alt="image of Caleb Widogast">
-                        <div class="card-body">
-                          <h4 class="card-title">Caleb Widogast</h4>
-                          <p>Wizard (School of Transmutation)</p>
-                          <a href="#" target="_blank" class="btn btn-outline-secondary">Character Sheet</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="card text-center">
-                        <img class="card-img-top" src="./assets/images/Beauregard.jpg" alt="image of Beauregard Lionett">
-                        <div class="card-body">
-                          <h4 class="card-title">Beauregard Lionett</h4>
-                          <p>Monk (Way of the Cobalt Soul)</p>
-                          <a href="#" target="_blank" class="btn btn-outline-secondary">Character Sheet</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="card text-center">
-                        <img class="card-img-top" src="./assets/images/Yasha.jpg" alt="image of Yasha Nydoorin">
-                        <div class="card-body">
-                          <h4 class="card-title">Yasha Nydoorin</h4>
-                          <p>Barbarian (Path of the Zealot)</p>
-                          <a href="#" target="_blank" class="btn btn-outline-secondary">Character Sheet</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="container-fluid padding">
-                  <div class="row padding">
-                    <div class="col-md-4">
-                      <div class="card text-center">
-                        <img class="card-img-top" src="./assets/images/Mollymauk.jpg" alt="image of Mollymauk Teafleaf">
-                        <div class="card-body">
-                          <h4 class="card-title">Mollymauk Tealeaf</h4>
-                          <p>Blood Hunter (Order of the Ghostslayer)</p>
-                          <a href="#" target="_blank" class="btn btn-outline-secondary">Character Sheet</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="card text-center">
-                        <img class="card-img-top" src="./assets/images/Fjord.jpg" alt="image of Fjord">
-                        <div class="card-body">
-                          <h4 class="card-title">Fjord</h4>
-                          <p>Warlock (Hexblade, Pact of the Blade)</p>
-                          <a href="#" target="_blank" class="btn btn-outline-secondary">Character Sheet</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="card text-center">
-                        <img class="card-img-top" src="./assets/images/Twiggy.jpg" alt="image of Twiggy">
-                        <div class="card-body">
-                          <h4 class="card-title">Twiggy</h4>
-                          <p>Rogue (Arcane Trickster)</p>
-                          <a href="#" target="_blank" class="btn btn-outline-secondary">Character Sheet</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
+          <div class="gallery js-flickity" data-flickity-options='{ "groupCells": true, "imagesLoaded": true, "percentPosition": false }'>
+            <div class="card text-center">
+              <img class="gallery-cell card-img-top" src="./assets/images/Caduceus.jpg">
+              <div class="card-body">
+                <h4 class="card-title">Caduceus Clay</h4>
+                <p>Cleric (Grave Domain)</p>
+                <a href="#" class="btn btn-outline-secondary">Character Sheet</a>
               </div>
             </div>
-
-            <a class="carousel-control-prev" href="#carouselslides" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-            <a class="carousel-control-next" href="#carouselslides" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+            <div class="card text-center">
+              <img class="gallery-cell card-img-top" src="./assets/images/Jester.jpg">
+              <div class="card-body">
+                <h4 class="card-title">Jester Lavorre</h4>
+                <p>Cleric (Trickery Domain)</p>
+                <a href="#" class="btn btn-outline-secondary">Character Sheet</a>
+              </div>
+            </div>
+            <div class="card text-center">
+              <img class="gallery-cell card-img-top" src="./assets/images/Nott.jpg">
+              <div class="card-body">
+                <h4 class="card-title">Nott</h4>
+                <p>Rogue (Arcane Trickster)</p>
+                <a href="#" class="btn btn-outline-secondary">Character Sheet</a>
+              </div>
+            </div>
+            <div class="card text-center">
+              <img class="gallery-cell card-img-top" src="./assets/images/Caleb.jpg">
+              <div class="card-body">
+                <h4 class="card-title">Caleb Widogast</h4>
+                <p>Wizard (School of Transmutation)</p>
+                <a href="#" class="btn btn-outline-secondary">Character Sheet</a>
+              </div>
+            </div>
+            <div class="card text-center">
+              <img class="gallery-cell card-img-top" src="./assets/images/Beauregard.jpg">
+              <div class="card-body">
+                <h4 class="card-title">Beauregard Lionett</h4>
+                <p>Monk (Way of the Cobalt Soul)</p>
+                <a href="#" class="btn btn-outline-secondary">Character Sheet</a>
+              </div>
+            </div>
+            <div class="card text-center">
+              <img class="gallery-cell card-img-top" src="./assets/images/Yasha.jpg">
+              <div class="card-body">
+                <h4 class="card-title">Yasha Nydoorin</h4>
+                <p>Barbarian (Path of the Zealot)</p>
+                <a href="#" class="btn btn-outline-secondary">Character Sheet</a>
+              </div>
+            </div>
+            <div class="card text-center">
+              <img class="gallery-cell card-img-top" src="./assets/images/Mollymauk.jpg">
+              <div class="card-body">
+                <h4 class="card-title">Mollymauk Tealeaf</h4>
+                <p>Blood Hunter (Order of the Ghostslayer)</p>
+                <a href="#" class="btn btn-outline-secondary">Character Sheet</a>
+              </div>
+            </div>
+            <div class="card text-center">
+              <img class="gallery-cell card-img-top" src="./assets/images/Fjord.jpg">
+              <div class="card-body">
+                <h4 class="card-title">Fjord</h4>
+                <p>Warlock (Hexblade, Pact of the Blade)</p>
+                <a href="#" class="btn btn-outline-secondary">Character Sheet</a>
+              </div>
+            </div>
+            <div class="card text-center">
+              <img class="gallery-cell card-img-top" src="./assets/images/Twiggy.jpg">
+              <div class="card-body">
+                <h4 class="card-title">Twiggy</h4>
+                <p>Rogue (Arcane Trickster)</p>
+                <a href="#" class="btn btn-outline-secondary">Character Sheet</a>
+              </div>
+            </div>
           </div>
 
           <!--Latest Episode-->
@@ -229,9 +173,7 @@
               <div class="col-md">
                 <h3 class="titletext">See Us In Action</h3>
                 <hr class="col-md light">
-                <div class="video-container"><iframe src="https://www.youtube.com/embed/LhFETREAvhc" frameborder="0" allowfullscreen="allowfullscreen" name="fitvid0" style="width: 1170px; height: 658.125px;"></iframe></div>
-                
-                <!--style="width: 1170px; height: 658.125px;"-->
+                <div class='video-container'><iframe src='https://www.youtube.com/embed/undefined' frameborder='0' allowfullscreen></iframe></div>
               </div>
             </div>
           </div>
@@ -239,8 +181,8 @@
           <!--Prize form-->
           <div class="container-fluid padding prize-item">
             <div class="row text-center padding">
-              <div class="col-md-12">
-                <h3>Enter Our Wyrmwood Prizedraw!</h3>
+              <div class="col-md">
+                <h3>GET IN TOUCH</h3>
                 <hr class="col-md-3 light">
                 <form>
                   <div class="form-row">
@@ -254,8 +196,8 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="M9Moments">Favourite M9 Moment</label>
-                    <textarea type="text" class="form-control" id="M9Moments" placeholder="Tell us about your favourite M9 moment for a chance to win!" rows="5"></textarea>
+                    <label for="M9Moments">What can we help you with?</label>
+                    <textarea type="text" class="form-control" id="M9Moments" placeholder="Tell us a little bit about your problem, and let's see if we can help!" rows="5"></textarea>
                   </div>
                   <div class="form-group">
                     <label for="EmailAddress">Email</label>
@@ -328,16 +270,7 @@
     </div>
   </div>
 
-  <!-- Main container -->
-
 </body>
-
-<!-- <script type="text/javascript" src="js/app.js"></script>
-<script type="text/javascript" src="jquery-3.3.1.js"></script>
-<script src="./parallax.js"></script> -->
 
 </html>
 
-
-<!-- <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10"> -->
-<!-- <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2"> -->
