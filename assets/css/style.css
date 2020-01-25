@@ -1,8 +1,7 @@
 @import "compass/css3";
 @import url("https://unpkg.com/flickity@2.2.1/dist/flickity.css");
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Syncopate:400,700&display=swap');
-/* font-family: 'Noto Sans JP', 'Syncopate', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
 
 /*--------Bootstrap Breakpoints---------*/
 
@@ -30,20 +29,6 @@ xl devices (>1200px) = @media min-width: 1200px
 }
 
 @media (min-width: 768px) {
-  .carousel-caption {
-    top: 45%;
-  }
-
-  .carousel-caption h1 {
-    font-size: 350%;
-  }
-
-  .carousel-caption h3 {
-    font-size: 140%;
-    font-weight: 400;
-    padding-bottom: .2rem;
-  }
-
   .dsiplay-4 {
     font-size: 200%;
   }
@@ -55,21 +40,6 @@ xl devices (>1200px) = @media min-width: 1200px
 }
 
 @media (min-width: 576px) {
-  .carousel-caption {
-    top: 40%;
-  }
-
-  .carousel-caption h1 {
-    font-size: 250%;
-  }
-
-  .carousel-caption h3 {
-    font-size: 110%;
-    font-weight: 400;
-  }
-  .carousel-indicators {
-    display: none;
-  }
 
   .display-4 {
     font-size: 160%;
@@ -90,7 +60,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #222;
   background-color: #0e1a35;
 }
@@ -204,15 +174,15 @@ body {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
-.gallery {
+.carousel {
   padding: 2rem;
   background: #1a2b44;
 }
 
-.gallery-cell {
+.carousel-cell {
   width: auto;
   height: 500px;
   padding-left: 5px;
@@ -222,7 +192,7 @@ body {
   counter-increment: carousel-cell;
 }
 
-.gallery-cell.is-selected {
+.carousel-cell.is-selected {
   background: #ED2;
 }
 
@@ -231,10 +201,26 @@ body {
   border: 15px solid #1a2b44;
 }
 
+#carousel-btn {
+  background-color: #818a92;
+}
+
+.btn-outline-secondary {
+  color: #29333c;
+}
+
+
+.flickity-page-dots .dot {
+  background: #9fabb9;
+}
+
+.flickity-page-dots {
+  position: static;
+}
 
 /* code from flickity styling cell number */
 
-.gallery-cell:before {
+.carousel-cell:before {
   display: block;
   text-align: center;
   content: counter(carousel-cell);
@@ -247,9 +233,13 @@ body {
 /*------About Styling-----*/
 
 .titles {
-  font-family: 'Syncopate', sans-serif;
+  font-family: 'Lato', sans-serif;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 700;
+}
+
+.titletext {
+  padding: 1.5%;
 }
 
 .texts {
@@ -259,9 +249,13 @@ body {
 }
 
 .about-item {
-  padding: 2rem;
+  padding: 4rem;
   background: url(../images/blue.jpeg) #151f3a;
   color: #d5d5d5;
+}
+
+#about-hr {
+  width: 100%;
 }
 
 #about-image {
@@ -297,12 +291,16 @@ body {
 /*--------Prizedraw Styling--------*/
 
 .prize-item {
-  padding: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 
   background-color: #4b5969;
   color: #d5d5d5;
 }
 
+#prize-title {
+  padding-top: 2%;
+}
 /*--------Social Media Styling--------*/
 
 .social a {
