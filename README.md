@@ -22,7 +22,7 @@ Features
 There are 8 main components to this site;
 
 1. Navigation bar - allows user to navigate to sections of the page directly, without scrolling.
-2. Parallax scrolling effect - create a visual impact upon entering the page, specifically a feel of whimsy or adventure
+2. Parallax image - create a visual impact upon entering the page
 3. About section - this section gives users some overall information about the Mighty Nein, and why the user might want to hire them 
 4. Character Carousel - this gives more specific information about each of the members of the Mighty Nein, including providing links to each character's wiki page
 5. Video Link - allows the user to watch a short video displaying the Mighty Nein's skillsets
@@ -35,15 +35,15 @@ Features Left to Implement
 
 I would like to create character sheets that users can download attached to the end of each character card within the carousel, rather than linking users to the character wiki (an external site).
 I would also like to implement an interactive timeline/ record of Mighty Nein victories, so that users can get a feel of the group's achievements thus far.
-I would like to refine the parallax scrolling effect, to make it more visually appealing.
+I would like to reinstate the parallax scrolling effect, with separate layers, to create perspective and a feeling of adventure.
 
 Technologies Used
 
 1. Bootstrap - framework
 2. JQuery - this project uses Jquery to both simplify the DOM manipulation, and originally to allow the active scrolling status of the character carousel, though this was later replaced by Flickity's framework. 
 3. Popper.js - as above
-4. Fontawesome
-5. CSS3 Compass
+4. Fontawesome - for social media symbols
+5.
 6. SCSS/SASS
 7. Flickity (https://flickity.metafizzy.co/) - library/ framework - used for responsive carousel, with multi-cell display
 

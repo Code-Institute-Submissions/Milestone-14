@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="./flickity.pkgd.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -25,29 +24,29 @@
         </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Page Top</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#characters">Characters</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Characters</a>
+            <a class="nav-link" href="#episode">Latest Episode</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Latest Episode</a>
+            <a class="nav-link" href="#sociallinks">Social</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="parallax">
+  <div class="parallax" id="pagetop">
     <div class="p-text caption">
-      <span class="bborder">
+      <span class="bborder" id="M9">
       THE MIGHTY NEIN
     </span>
     </div>
@@ -72,32 +71,28 @@
         <div class="container-fluid padding about-item">
           <div class="row padding">
             <div class="col-md">
-              <h1 class="titles">What is this? Who Are You?</h1>
+              <h1 class="titles" id="about">What is this? Who Are You?</h1>
               <hr class="light" id="about-hr">
               <p class="texts">Welcome, friends and wannabe-adventureres, to the resting place of the (in)famous Might Nein. Known throughout (some) of Exandria for our daring and spectacular and totally, definitely well-thought-out exploits, we are the best mercenary
                 group for higher this side of the Shearing Channel. We boast a wide range of skillsets, including two clerics (capable of healing wonders), a warlock and a wizard for all your magicking needs, rogues for every occasion, a cobalt monk,
-                and (sometimes) even a barbarian. So go on, have a browse - and if you have any questions, you'll find us in the nearest tavern...
-                <!--<br><br> Our legendary s range from dragon-slaying, to demon-raising, to a memorable occasion collectiong buttons. All for a very reasonable (open-to-negotiation) price!-->
-                <!--<br><br>-->
-                So go on, have a browse - and if you have any questions, you'll find us in the nearest tavern.</p>
+                and (sometimes) even a barbarian.
+                <br>So go on, have a browse - and if you have any questions, you'll find us in the nearest tavern...
             </div>
             <div class="col-lg-6 responsive image1">
               <img src="./assets/images/m99.jpg" alt="image of the Mighty Nein team" class="img-fluid" id="about-image">
             </div>
-            <!--<div class="col-lg-6 responsive image2">-->
-            <!--  <img src="./assets/images/m99.jpg" alt="image of the Mighty Nein team" class="img-fluid" id="about-image">-->
-            <!--</div>-->
+
           </div>
         </div>
 
 
         <!--Character carousel-->
-        <div class="carousel js-flickity" data-flickity-options='{ "groupCells": true, "imagesLoaded": true, "percentPosition": false }'>
+        <div class="carousel js-flickity" data-flickity-options='{ "groupCells": true, "imagesLoaded": true, "percentPosition": false }' id="characters">
           <div class="card text-center">
             <img class="carousel-cell card-img-top" src="./assets/images/Caduceus.jpg">
             <div class="card-body">
               <h4 class="card-title">Caduceus Clay</h4>
-              <p>Cleric (Grave Domain)</p>
+              <p class="s-hide">Cleric (Grave Domain)</p>
               <a href="https://criticalrole.fandom.com/wiki/Caduceus_Clay" class="btn btn-outline-secondary" id="carousel-btn" target="_blank">Character Wiki</a>
             </div>
           </div>
@@ -105,7 +100,7 @@
             <img class="carousel-cell card-img-top" src="./assets/images/Jester.jpg">
             <div class="card-body">
               <h4 class="card-title">Jester Lavorre</h4>
-              <p>Cleric (Trickery Domain)</p>
+              <p class="s-hide">Cleric (Trickery Domain)</p>
               <a href="https://criticalrole.fandom.com/wiki/Jester_Lavorre" class="btn btn-outline-secondary" id="carousel-btn" target="_blank">Character Wiki</a>
             </div>
           </div>
@@ -113,7 +108,7 @@
             <img class="carousel-cell card-img-top" src="./assets/images/Nott.jpg">
             <div class="card-body">
               <h4 class="card-title">Nott</h4>
-              <p>Rogue (Arcane Trickster)</p>
+              <p class="s-hide">Rogue (Arcane Trickster)</p>
               <a href="https://criticalrole.fandom.com/wiki/Nott" class="btn btn-outline-secondary" id="carousel-btn" target="_blank">Character Wiki</a>
             </div>
           </div>
@@ -121,7 +116,7 @@
             <img class="carousel-cell card-img-top" src="./assets/images/Caleb.jpg">
             <div class="card-body">
               <h4 class="card-title">Caleb Widogast</h4>
-              <p>Wizard (School of Transmutation)</p>
+              <p class="s-hide">Wizard (School of Transmutation)</p>
               <a href="https://criticalrole.fandom.com/wiki/Caleb_Widogast" class="btn btn-outline-secondary" id="carousel-btn" target="_blank">Character Wiki</a>
             </div>
           </div>
@@ -129,7 +124,7 @@
             <img class="carousel-cell card-img-top" src="./assets/images/Beauregard.jpg">
             <div class="card-body">
               <h4 class="card-title">Beauregard Lionett</h4>
-              <p>Monk (Way of the Cobalt Soul)</p>
+              <p class="s-hide">Monk (Way of the Cobalt Soul)</p>
               <a href="https://criticalrole.fandom.com/wiki/Beauregard_Lionett" class="btn btn-outline-secondary" id="carousel-btn" target="_blank">Character Wiki</a>
             </div>
           </div>
@@ -137,7 +132,7 @@
             <img class="carousel-cell card-img-top" src="./assets/images/Yasha.jpg">
             <div class="card-body">
               <h4 class="card-title">Yasha Nydoorin</h4>
-              <p>Barbarian (Path of the Zealot)</p>
+              <p class="s-hide">Barbarian (Path of the Zealot)</p>
               <a href="https://criticalrole.fandom.com/wiki/Yasha_Nydoorin" class="btn btn-outline-secondary" id="carousel-btn" target="_blank">Character Wiki</a>
             </div>
           </div>
@@ -145,7 +140,7 @@
             <img class="carousel-cell card-img-top" src="./assets/images/Mollymauk.jpg">
             <div class="card-body">
               <h4 class="card-title">Mollymauk Tealeaf</h4>
-              <p>Blood Hunter (Order of the Ghostslayer)</p>
+              <p class="s-hide">Blood Hunter (Order of the Ghostslayer)</p>
               <a href="https://criticalrole.fandom.com/wiki/Mollymauk_Tealeaf" class="btn btn-outline-secondary" id="carousel-btn" target="_blank">Character Wiki</a>
             </div>
           </div>
@@ -153,7 +148,7 @@
             <img class="carousel-cell card-img-top" src="./assets/images/Fjord.jpg">
             <div class="card-body">
               <h4 class="card-title">Fjord</h4>
-              <p>Warlock (Hexblade, Pact of the Blade)</p>
+              <p class="s-hide">Warlock (Hexblade, Pact of the Blade)</p>
               <a href="https://criticalrole.fandom.com/wiki/Fjord" class="btn btn-outline-secondary" id="carousel-btn" target="_blank">Character Wiki</a>
             </div>
           </div>
@@ -161,7 +156,7 @@
             <img class="carousel-cell card-img-top" src="./assets/images/Twiggy.jpg">
             <div class="card-body">
               <h4 class="card-title">Twiggy</h4>
-              <p>Rogue (Arcane Trickster)</p>
+              <p class="s-hide">Rogue (Arcane Trickster)</p>
               <a href="https://criticalrole.fandom.com/wiki/Twiggy" class="btn btn-outline-secondary" id="carousel-btn" target="_blank">Character Wiki</a>
             </div>
           </div>
@@ -169,7 +164,7 @@
             <img class="carousel-cell card-img-top" src="./assets/images/Reani.jpg">
             <div class="card-body">
               <h4 class="card-title">Reani</h4>
-              <p>Druid (Circle of the Moon)</p>
+              <p class="s-hide">Druid (Circle of the Moon)</p>
               <a href="https://criticalrole.fandom.com/wiki/Reani" class="btn btn-outline-secondary" id="carousel-btn" target="_blank">Character Wiki</a>
             </div>
           </div>
@@ -177,7 +172,7 @@
             <img class="carousel-cell card-img-top" src="./assets/images/Nila.jpg">
             <div class="card-body">
               <h4 class="card-title">Nila</h4>
-              <p>Druid (Circle of the Shepherd)</p>
+              <p class="s-hide">Druid (Circle of the Shepherd)</p>
               <a href="https://criticalrole.fandom.com/wiki/Nila" class="btn btn-outline-secondary" id="carousel-btn" target="_blank">Character Wiki</a>
             </div>
           </div>
@@ -185,7 +180,7 @@
             <img class="carousel-cell card-img-top" src="./assets/images/Shakäste.jpg">
             <div class="card-body">
               <h4 class="card-title">Shakäste</h4>
-              <p>Cleric (Tempest Domain)</p>
+              <p class="s-hide">Cleric (Tempest Domain)</p>
               <a href="https://criticalrole.fandom.com/wiki/Shak%C3%A4ste" class="btn btn-outline-secondary" id="carousel-btn" target="_blank">Character Wiki</a>
             </div>
           </div>
@@ -193,7 +188,7 @@
             <img class="carousel-cell card-img-top" src="./assets/images/Keg.jpg">
             <div class="card-body">
               <h4 class="card-title">Keg</h4>
-              <p>Fighter (Champion)</p>
+              <p class="s-hide">Fighter (Champion)</p>
               <a href="https://criticalrole.fandom.com/wiki/Shak%C3%A4ste" class="btn btn-outline-secondary" id="carousel-btn" target="_blank">Character Wiki</a>
             </div>
           </div>
@@ -203,7 +198,7 @@
 
       <!--Latest Episode-->
 
-      <div class="container-fluid padding episode">
+      <div class="container-fluid padding episode" id="episode">
         <div class="row text-center padding">
           <div class="col-md">
             <h1 class="titletext titles">See Us In Action</h1>
@@ -214,20 +209,20 @@
       </div>
 
       <!--Prize form-->
-      <div class="container-fluid padding prize-item">
+      <div class="container-fluid padding prize-item" id="contact">
         <div class="row2 text-center padding">
           <div class="col-md">
             <h2 class="titles" id="prize-title">GET IN TOUCH</h2>
             <hr class="col-md-3 light">
-            <form>
+            <form class="texts">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="FirstName">First Name</label>
-                  <input type="email" class="form-control" id="FirstName">
+                  <input type="email" class="form-control" id="FirstName" placeholder="First Name">
                 </div>
                 <div class="form-group col-md-6">
                   <label for="LastName">Last Name</label>
-                  <input type="password" class="form-control" id="LastName">
+                  <input type="password" class="form-control" id="LastName" placeholder="Last Name">
                 </div>
               </div>
               <div class="form-group">
@@ -253,7 +248,7 @@
 
 
       <!--social media links-->
-      <div class="container-fluid padding episode">
+      <div class="container-fluid padding episode" id="sociallinks">
         <div class="row text-center padding">
           <div class="col-12">
             <h3 class="titles find-text">Find Us Online</h3>
@@ -275,26 +270,26 @@
             <div class="col-md-4">
               <img src="./assets/images/Logo.png" alt="image of Critical Role Logo" width="50">
               <hr class="light">
-              <p>phone number</p>
-              <p>email</p>
-              <p>address line 1</p>
-              <p>address line 2</p>
+              <p>666-777-888</p>
+              <p>info@critrole.com</p>
+              <p>Xhorhouse</p>
+              <p>Ghor Dranas</p>
             </div>
             <div class="col-md-4">
               <hr class="light">
               <h5>Upcoming Events</h5>
               <hr class="light">
-              <p>date1</p>
-              <p>date2</p>
-              <p>date3</p>
+              <p>27-Feb Live Show</p>
+              <p>29-Feb C2E2</p>
+              <p>30-May MCM</p>
             </div>
             <div class="col-md-4">
               <hr class="light">
-              <h5>Upcoming Events</h5>
+              <h5>Upcoming Locations</h5>
               <hr class="light">
-              <p>date1</p>
-              <p>date2</p>
-              <p>date3</p>
+              <p>Auditorium Theatre</p>
+              <p>Mccormick Place</p>
+              <p>Excel London</p>
             </div>
           </div>
         </div>
@@ -306,5 +301,6 @@
   </div>
 
 </body>
+<script src="./flickity.pkgd.min.js"></script>
 
 </html>
