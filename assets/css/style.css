@@ -41,6 +41,11 @@ xl devices (>1200px) = @media max-width: 1200px
   .subsub {
     display: none;
   }
+  
+  .image1 {
+    display: none;
+  }
+
 
 }
 
@@ -80,19 +85,19 @@ xl devices (>1200px) = @media max-width: 1200px
   .subsub {
     display: none;
   }
-  
+
   .s-hide {
     display: none;
   }
-  
+
   .image1 {
     display: none;
   }
-  
+
   .texts {
     font-size: 110% !important;
   }
-  
+
 
 }
 
@@ -233,7 +238,7 @@ body {
   border: 15px solid #1a2b44;
 }
 
-#carousel-btn {
+.carousel-btn {
   background-color: #818a92;
 }
 
@@ -321,6 +326,7 @@ body {
   width: 80%;
   height: 80%;
   margin: 0 auto;
+  border: none;
 }
 
 
