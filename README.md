@@ -21,7 +21,7 @@ A TRIBUTE TO THE MIGHTY NEIN
 
 DEMO
 ----
-A live demo of the site can be found [here](https://5e3f55064a40511c72bd8c60--reverent-agnesi-35899e.netlify.com/). There is a slight delay in image load times due to the hosting site.
+A live demo of the site can be found [here](https://5e3f55064a40511c72bd8c60--reverent-agnesi-35899e.netlify.com/)(Netlify). Or [here](https://rhombencephalon.github.io/Milestone-1/) (GitHub Pages).
 
 
 UX
