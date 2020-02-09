@@ -7,15 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js"></script>
   <link rel="stylesheet" href="assets/css/style.css" media="screen">
   <title>The Mighty Nein</title>
 </head>
 
 <body>
-  <!--navigation will be here-->
+  <!--NAVBAR, with in-page section links-->
   <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="https://critrole.com/" target="_blank"><img src="./assets/images/Logo.png" height="25" alt="Mighty Nein Logo"></a>
@@ -31,7 +30,7 @@
             <a class="nav-link" href="#characters">Characters</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#episode">Latest Episode</a>
+            <a class="nav-link" href="#episode">Watch us in Action</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -43,7 +42,9 @@
       </div>
     </div>
   </nav>
-
+  
+  
+<!--LANDING PARALLAX IMAGE AND TITLE-->
   <div class="parallax" id="pagetop">
     <div class="p-text caption">
       <span class="bborder" id="M9">
@@ -66,7 +67,7 @@
     <div id="maincontain">
       <div id="main">
 
-        <!--About-->
+        <!--ABOUT-->
         <div class="container-fluid padding about-item">
           <div class="row padding">
             <div class="col-md">
@@ -85,8 +86,10 @@
         </div>
 
 
-        <!--Character carousel-->
+        <!--CHARACTER CAROUSEL-->
+        <!--flickity interactive JS-->
         <div class="carousel js-flickity" data-flickity-options='{ "groupCells": true, "imagesLoaded": true, "percentPosition": false }' id="characters">
+          <!--bootstrap card format-->
           <div class="card text-center">
             <img class="carousel-cell card-img-top" src="./assets/images/Caduceus.jpg" alt="Image of Caduceus Clay">
             <div class="card-body">
@@ -195,7 +198,7 @@
       </div>
 
 
-      <!--Latest Episode-->
+      <!--VIDEO-->
 
       <div class="container-fluid padding episode" id="episode">
         <div class="row text-center padding">
@@ -207,32 +210,28 @@
         </div>
       </div>
 
-      <!--Prize form-->
+      <!--CONTACT FORM-->
       <div class="container-fluid padding prize-item" id="contact">
         <div class="row2 text-center padding">
           <div class="col-md">
             <h2 class="titles" id="prize-title">GET IN TOUCH</h2>
             <hr class="col-md-3 light">
-            <form class="texts">
+            <form class="texts" id="contact-form">
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="FirstName">First Name</label>
-                  <input type="email" class="form-control" id="FirstName" placeholder="First Name">
+                  <input type="text" class="form-control" id="FirstName" placeholder="First Name" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="LastName">Last Name</label>
-                  <input type="password" class="form-control" id="LastName" placeholder="Last Name">
+                  <input type="password" class="form-control" id="LastName" placeholder="Last Name" required>
                 </div>
               </div>
-              <div class="form-group">
-                <label for="EmailAddress">Email</label>
-                <input type="text" class="form-control" id="EmailAddress" placeholder="email@address.com">
+              <div class="form-group lge">
+                <input type="email" class="form-control" id="EmailAddress" placeholder="email@address.com" required>
               </div>
-              <div class="form-group">
-                <label for="M9Moments">What can we help you with?</label>
+              <div class="form-group lge">
                 <textarea class="form-control" id="M9Moments" placeholder="Tell us a little bit about your problem, and let's see if we can help!" rows="5"></textarea>
               </div>
-              <div class="form-group">
+              <div class="form-group lge">
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" id="gridCheck">
                   <label class="form-check-label" for="gridCheck">Keep me up-to-date via email</label>
@@ -246,7 +245,7 @@
       </div>
 
 
-      <!--social media links-->
+      <!--SOCIAL MEDIA-->
       <div class="container-fluid padding episode" id="sociallinks">
         <div class="row text-center padding">
           <div class="col-12">
