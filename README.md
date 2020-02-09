@@ -21,7 +21,7 @@ A TRIBUTE TO THE MIGHTY NEIN
 
 DEMO
 ----
-A live demo of the site can be found [here](https://5e3f55064a40511c72bd8c60--reverent-agnesi-35899e.netlify.com/)(Netlify). Or [here](https://rhombencephalon.github.io/Milestone-1/) (GitHub Pages).
+A live demo of the site can be found [here](https://rhombencephalon.github.io/Milestone-1/) (GitHub Pages). 
 
 
 UX
@@ -158,7 +158,7 @@ I had some issues with bootstrap's autopadding, so overrode this is my own style
 DEPLOYMENT
 ----------
 
-This site is hosted on [netlify](https://app.netlify.com/) and using GitHub pages, deployed directly from the master branch. While netlify does not auto-update according to new repsoitory pushes, the GitHub hosted live site does. By cloning the code on the GitHub pages, you can also run it locally on your machine.
+This site is hosted on GitHub pages, deployed directly from the master branch. The GitHub hosted live site auto-updates according to new repository pushes. By cloning the code on the GitHub pages, you can also run it locally on your machine.
 
 
 CREDITS
